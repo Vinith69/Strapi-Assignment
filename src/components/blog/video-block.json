@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blog_video_blocks",
+  "info": {
+    "displayName": "Video Block",
+    "icon": "monitor"
+  },
+  "options": {},
+  "attributes": {
+    "video_url": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

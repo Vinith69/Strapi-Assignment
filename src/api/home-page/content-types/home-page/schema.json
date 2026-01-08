@@ -1,0 +1,75 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_title": {
+      "type": "string",
+      "required": true
+    },
+    "hero_description": {
+      "type": "blocks"
+    },
+    "catalysts_section": {
+      "type": "component",
+      "component": "home.section-header",
+      "repeatable": false
+    },
+    "catalysts": {
+      "type": "component",
+      "component": "home.catalyst",
+      "repeatable": true
+    },
+    "work_that_work_section": {
+      "type": "component",
+      "component": "home.section-header",
+      "repeatable": false
+    },
+    "work_that_work_sections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    },
+    "brands_section": {
+      "type": "component",
+      "component": "home.section-header",
+      "repeatable": false
+    },
+    "brands": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::customer.customer"
+    },
+    "industries_section": {
+      "type": "component",
+      "component": "home.section-header",
+      "repeatable": false
+    },
+    "industries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry.industry"
+    },
+    "new_at_section": {
+      "type": "component",
+      "component": "home.section-header",
+      "repeatable": false
+    },
+    "new_at": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "experience_years": {
+      "type": "integer"
+    }
+  }
+}

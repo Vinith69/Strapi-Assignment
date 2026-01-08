@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_home_section_headers",
+  "info": {
+    "displayName": "Section Header",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

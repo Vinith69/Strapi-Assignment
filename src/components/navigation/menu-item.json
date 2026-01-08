@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_navigation_menu_items",
+  "info": {
+    "displayName": "Menu Item",
+    "icon": "monitor"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "unique": true,
+      "min": 1,
+      "max": 5
+    }
+  },
+  "config": {}
+}

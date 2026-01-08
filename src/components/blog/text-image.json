@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blog_text_images",
+  "info": {
+    "displayName": "Text Image",
+    "icon": "monitor"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "blocks"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    }
+  },
+  "config": {}
+}
