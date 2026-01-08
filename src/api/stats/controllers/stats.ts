@@ -9,8 +9,9 @@ export default {
       strapi.documents("api::customer.customer").count({}),
       strapi.documents("api::technology.technology").count({}),
       strapi.documents("api::blog.blog").count({
-        filters: { publishedAt: { $notNull: true } },
-      }),
+        publicationState: "live",
+        withAuth: false,
+      } as any),
     ]);
 
     ctx.body = {
